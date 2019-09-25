@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+  <title>Title</title>
+  <link rel="stylesheet" href="public/static/css/reset.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+</body>
+<script>
+  window.onload = () =>{
+    //阻止整个页面的默认事件
+    document.addEventListener('touchstart',(ev)=>{
+      ev.preventDefault();
+    },{passive:false})
+
+    //rem适配
+    ;(()=>{
+      const styleNode = document.createElement('style');
+      const Ww = document.documentElement.clientWidth/16;
+      styleNode.innerHTML = `html{font-size:${Ww}px!important}`;
+      document.head.appendChild(styleNode);
+    })()
+  }
+</script>
+</html>
