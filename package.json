@@ -1,0 +1,23 @@
+{
+  "name": "myProject",
+  "version": "1.0.0",
+  "description": "购物车",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luojianrong/wangyiyanxuanStatic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luojianrong/wangyiyanxuanStatic/issues"
+  },
+  "homepage": "https://github.com/luojianrong/wangyiyanxuanStatic#readme",
+  "dependencies": {
+    "better-scroll": "^1.15.2"
+  }
+}

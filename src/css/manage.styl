@@ -1,0 +1,220 @@
+//rem适配的混合
+rem(p)
+  $rem=750/10
+  return p/$rem rem
+
+*
+  margin 0
+  padding 0
+
+html,body
+  height 100%
+  width 100%
+.wrapper
+  .wrapper-main
+    .header
+      .position-fixed
+        position fixed
+        background-color #FAFAFA
+        .header-main
+          width 100%
+          height rem(100)
+          display flex
+          justify-content space-around
+          align-items center
+          position relative
+          z-index 999
+          .home
+            position absolute
+            left rem(20)
+          .title
+            position absolute
+            width 3.2rem
+            height rem(100)
+            line-height rem(100)
+            text-align center
+            top 0
+            margin-left -1.6rem
+            font-size .28rem
+            color #7F7F7F
+            z-index 1
+            a
+              padding 0 .16rem
+              vertical-align middle
+            .active
+              font-size rem(40)
+              color #b4282d
+              font-weight bold
+          i
+            font-size rem(50)
+          .right
+            width rem(150)
+            display flex
+            align-items center
+            justify-content space-around
+            position absolute
+            left rem(580)
+            a
+              display inline-block
+      .nav
+        width rem(750)
+        height rem(72)
+        background #fffff
+        border-top .01rem solid #d9d9d9
+        border-bottom .01rem solid #d9d9d9
+        box-sizing border-box
+        .nav-tabs
+          height .72rem
+          width rem(2000)
+          padding-bottom .2rem
+          white-space nowrap
+          .item
+            display inline-block
+            height rem(72)
+            line-height rem(72)
+            box-sizing border-box
+            font-size rem(28)
+            color #7F7F7F
+            padding 0 .08rem
+            margin 0 rem(20)
+            vertical-align middle
+            &.active
+              color #B4282D
+              border-bottom .04rem solid #B4282D
+  .content
+    width 100%
+    overflow hidden
+    padding-top rem(162)
+    .content-main
+      background-color #F2F5F4
+      .item
+        display block
+        width rem(750)
+        background #fff
+        padding rem(36) rem(32)
+        margin-top rem(20)
+        a
+          .pic
+            width rem(690)
+            height rem(188*2)
+            overflow hidden
+            border-radius .08rem
+            background-color #0a66b7
+            img
+              width 100%
+              height 100%
+        .title
+          width rem(690)
+          height rem(102)
+          font-size rem(36)
+          color #333
+          line-height .7rem
+          overflow hidden
+          text-overflow ellipsis
+          font-family PingFangSC-Regular
+        .rcount
+          margin-top rem(10)
+          color #999
+          line-height .32rem
+          font-size .28rem
+          .icon
+            font-size .28rem
+          span
+            font-size .28rem
+
+      .piker
+        display block
+        width rem(750)
+        padding rem(36) rem(32)
+        margin-top rem(20)
+        overflow hidden
+        background-color #ffffff
+        .info
+          width rem(400)
+          height rem(272)
+          float left
+          .name
+            width rem(400)
+            height rem(56)
+            display flex
+            align-items center
+            .title
+              font-size rem(28)
+          .eat
+            width 100%
+            height rem(100)
+            font-size rem(36)
+            color #333
+            line-height rem(45)
+            overflow hidden
+            text-overflow ellipsis
+            display -webkit-box
+            padding-top .32rem
+            font-family PingFangSC-Regular
+          .rcount
+            margin-top rem(35)
+            color #999
+            line-height .32rem
+            font-size .28rem
+          .icon
+            font-size .28rem
+          span
+            font-size .28rem
+          .desc
+            width 100%
+            white-space nowrap
+            overflow hidden
+            text-overflow ellipsis
+            font-size rem(28)
+            line-height .4rem
+            padding-top .08rem
+            color #7f7f7f
+          .img
+            display inline-block
+            width rem(56)
+            height rem(56)
+            overflow hidden
+            border-radius 50%
+            box-sizing border-box
+            border .01rem solid #d9d9d9
+            margin-right .12rem
+            img
+              width rem(56)
+              height rem(56)
+        .pic
+          float left
+          width rem(272)
+          height rem(272)
+          margin-left rem(20)
+          .img
+            width 100%
+            height 100%
+
+  /*底部导航样式*/
+  .tabBar-wrap
+    position fixed
+    z-index 999
+    left 0
+    bottom 0
+    width 100%
+    .m-tabBar
+      height rem(98)
+      display flex
+      align-items center
+      justify-content space-around
+      background-color #ffff
+      .item
+        display flex
+        flex-direction column
+        justify-content center
+        align-items center
+        color #666
+        &.active
+          color #b4282d
+        .icon
+          font-size rem(45)
+        .text
+          margin-top .09333rem
+          font-size .32rem
+
+

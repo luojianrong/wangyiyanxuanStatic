@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=0.5"/>
+  <title>登录</title>
+  <link rel="stylesheet" href="public/static/css/reset.css">
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1434069_enu6iahlom.css">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+<div class="wrapper">
+  <div class="wrapper-main">
+    <div class="header">
+      <header class="header-main">
+        <a class="home" href="./index.html"><i class="iconfont iconshouye"></i></a>
+        <h2 class="title">网易严选</h2>
+        <div class="line"></div>
+        <div class="right">
+          <a class="search" href=""><i class="iconfont iconsousuo"></i></a>
+          <a class="cart" href=""><i class="iconfont icongouwuche2"></i></a>
+        </div>
+      </header>
+    </div>
+    <div class="content">
+      <div class="logo">
+        <img src="//yanxuan.nosdn.127.net/bd139d2c42205f749cd4ab78fa3d6c60.png" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  //rem适配
+  (()=>{
+    const styleNode = document.createElement('style');
+    const Ww = document.documentElement.clientWidth/10;
+    styleNode.innerHTML = `html{font-size:${Ww}px!important}`;
+    document.head.appendChild(styleNode);
+  })()
+</script>
+</body>
+</html>

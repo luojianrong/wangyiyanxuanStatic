@@ -76,7 +76,7 @@ body {
   text-align: center;
   color: #333;
 }
-.wrapper .head-main .header .nav .nav-tabs div.firstafter {
+.wrapper .head-main .header .nav .nav-tabs div.first:after {
   position: absolute;
   left: 0;
   top: 0.533333333333333rem;
@@ -105,8 +105,8 @@ body {
   padding-top: 1.973333333333333rem;
 /*轮播*/
 }
-.wrapper .contain .lunbo .swiper,
-.wrapper .contain .swipers .swiper {
+.wrapper .contain .lunbo .swiper div,
+.wrapper .contain .swipers .swiper div {
   height: 4.933333333333334rem;
   width: 10rem;
 }

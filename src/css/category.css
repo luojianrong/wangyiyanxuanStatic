@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+}
+.wrapper .wrapper-main .hdWraper {
+  position: fixed;
+  z-index: 99;
+}
+.wrapper .wrapper-main .hdWraper .head-main {
+  padding-top: 0.2rem;
+  width: 10rem;
+  height: 1rem;
+  background-color: #fafafa;
+  position: relative;
+}
+.wrapper .wrapper-main .hdWraper .head-main:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #ededed;
+}
+@media screen and (-webkit-device-pixel-ratio2) {
+  .wrapper .wrapper-main .hdWraper .head-main:after {
+    transform: scaleY(0.5);
+  }
+}
+@media screen and (-webkit-device-pixel-ratio3) {
+  .wrapper .wrapper-main .hdWraper .head-main:after {
+    transform: scaleY(0.333333333333333);
+  }
+}
+.wrapper .wrapper-main .hdWraper .head-main .head-search {
+  margin-left: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 9.2rem;
+  height: 0.746666666666667rem;
+  color: #666;
+  font-size: 0.37333rem;
+  background-color: #ededed;
+  border-radius: 0.10667rem;
+}
+.wrapper .wrapper-main .cateContainer {
+  display: flex;
+  width: 10rem;
+  height: 14.933333333333334rem;
+  padding-top: 1rem;
+  overflow: hidden;
+}
+.wrapper .wrapper-main .cateContainer .left-list {
+  width: 2.16rem;
+  padding-top: 0.333333333333333rem;
+  height: 100%;
+}
+.wrapper .wrapper-main .cateContainer .left-list .list {
+  height: 14.933333333333334rem;
+  padding: 0.23333rem 0;
+}
+.wrapper .wrapper-main .cateContainer .left-list .list .item {
+  width: 2.16rem;
+  height: 1.346666666666667rem;
+  text-align: center;
+  line-height: 1.333333333333333rem;
+  position: relative;
+  font-size: 0.373333333333333rem;
+}
+.wrapper .wrapper-main .cateContainer .left-list .list .item.active:after {
+  content: ' ';
+  position: absolute;
+  top: 0.333333333333333rem;
+  left: 0;
+  bottom: 0;
+  width: 0.08rem;
+  height: 0.666666666666667rem;
+  background-color: #ab2b2b;
+}
+.wrapper .wrapper-main .cateContainer .left-list .list .item.active {
+  color: #ab2b2b;
+}
+.wrapper .wrapper-main .cateContainer .right-list {
+  padding-top: 0.533333333333333rem;
+  margin-left: 0.4rem;
+  width: 7.04rem;
+}
+.wrapper .wrapper-main .cateContainer .right-list .subCateList {
+  width: 7.04rem;
+  height: 11.626666666666667rem;
+}
+.wrapper .wrapper-main .cateContainer .right-list .subCateList .subCateContainer .banner {
+  width: 7.04rem;
+  height: 2.56rem;
+}
+.wrapper .wrapper-main .cateContainer .right-list .subCateList .subCateContainer .banner img {
+  width: 100%;
+  height: 100%;
+}
+.wrapper .wrapper-main .cateContainer .right-list .subCateList .subCateContainer .cateList .list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.wrapper .wrapper-main .cateContainer .right-list .subCateList .subCateContainer .cateList .list .item {
+margin-left
+  display: inline-block;
+  width: 1.92rem;
+  height: 2.88rem;
+}
+.wrapper .wrapper-main .cateContainer .right-list .subCateList .subCateContainer .cateList .list .item .cateImgWrapper {
+  margin-top: 0.266666666666667rem;
+  width: 1.92rem;
+  height: 1.866666666666667rem;
+}
+.wrapper .wrapper-main .cateContainer .right-list .subCateList .subCateContainer .cateList .list .item .cateImgWrapper img {
+  width: 1.92rem;
+  height: 1.866666666666667rem;
+}
+.wrapper .wrapper-main .cateContainer .right-list .subCateList .subCateContainer .cateList .list .item .name {
+  display: block;
+  height: 0.693333333333333rem;
+  line-height: 0.693333333333333rem;
+  text-align: center;
+  font-size: 0.32rem;
+  color: #333;
+}
+.wrapper .tabBar-wrap {
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.wrapper .tabBar-wrap .m-tabBar {
+  height: 1.306666666666667rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+}
+.wrapper .tabBar-wrap .m-tabBar .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #666;
+}
+.wrapper .tabBar-wrap .m-tabBar .item.active {
+  color: #b4282d;
+}
+.wrapper .tabBar-wrap .m-tabBar .item .icon {
+  font-size: 0.6rem;
+}
+.wrapper .tabBar-wrap .m-tabBar .item .text {
+  margin-top: 0.09333rem;
+  font-size: 0.32rem;
+}
