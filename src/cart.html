@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=0.5"/>
+  <title>购物车</title>
+  <link rel="stylesheet" href="public/static/css/reset.css">
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1434069_z1nytm8c6s.css">
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+<div class="wrapper">
+  <div class="wrapper-main">
+    <div class="header">
+      <header class="header-main">
+        <span class="logo">购物车</span>
+        <span class="text">领卷</span>
+      </header>
+      <div class="tab">
+        <ul class="service">
+          <li class="item">
+            <i class="iconfont iconyuandianxiao"></i>
+            <span>30天无忧退货</span>
+          </li>
+          <li class="item">
+            <i class="iconfont iconyuandianxiao"></i>
+            <span>48小时快速退款</span>
+          </li>
+          <li class="item">
+            <i class="iconfont iconyuandianxiao"></i>
+            <span>满88元免邮费</span>
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="img">
+          <img src="https://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/noCart-d6193bd6e4.png" alt="">
+        </div>
+        <div class="text">
+          <span>去添加点什么吧</span>
+          <p class="login">登录</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  //rem适配
+  (()=>{
+    const styleNode = document.createElement('style');
+    const Ww = document.documentElement.clientWidth/10;
+    styleNode.innerHTML = `html{font-size:${Ww}px!important}`;
+    document.head.appendChild(styleNode);
+  })()
+</script>
+</body>
+</html>
